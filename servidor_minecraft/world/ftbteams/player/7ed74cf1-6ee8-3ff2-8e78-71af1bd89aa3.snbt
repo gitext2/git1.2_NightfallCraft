@@ -1,0 +1,17 @@
+{
+	id: "7ed74cf1-6ee8-3ff2-8e78-71af1bd89aa3"
+	type: "player"
+	player_name: "Elishy_"
+	ranks: {
+		7ed74cf1-6ee8-3ff2-8e78-71af1bd89aa3: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Elishy_"
+		"ftbteams:description": ""
+		"ftbteams:color": "#C859FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

@@ -1,0 +1,159 @@
+
+#General Settings
+[general]
+	#Maximum style points (SSS cap).
+	#Range: 1000 ~ 100000
+	maxPoints = 4500
+
+[Scoring]
+	#Points awarded for each combo
+	#
+	#Range: 0 ~ 5000
+	comboPoints = 10
+	#Points awarded for each kill
+	#
+	#Range: 0 ~ 5000
+	killPoints = 125
+	#Points awarded for successful parry
+	#
+	#Range: 0 ~ 5000
+	parryPoints = 160
+	#Points awarded for successful dodge
+	#
+	#Range: 0 ~ 5000
+	dodgePoints = 90
+	#Points awarded for kiling entity by Explosion Sources
+	#
+	#Range: 0 ~ 5000
+	explosionPoints = 300
+	#Points awarded for projectile hit
+	#
+	#Range: 0 ~ 5000
+	projectileHitPoints = 50
+	#Points awarded for blocking by using shield successfully
+	#
+	#Range: 0 ~ 5000
+	shieldBlockedPoints = 35
+	#Points gained when performing a critical hit
+	#Range: 0 ~ 10000
+	criticalHitPoints = 30
+	#Points gained when using a Totem of Undying
+	#Range: 0 ~ 10000
+	totemUsePoints = 500
+	#Points gained when stun mob by 'StunType.KNOCKDOWN'
+	#Range: 0 ~ 10000
+	stunKnockdownPoints = 200
+	#Points gained when guard break or stun mob by 'StunType.NEUTRALIZE'
+	#Range: 0 ~ 10000
+	stunNeutralizePoints = 175
+	#Points awarded for executed enemy (DamageTypes Tags from EF: EXECUTION)
+	#Range: 0 ~ 1000
+	executionKillPoints = 250
+	#Points awarded for finishing enemy (DamageTypes Tags from EF: FINISHER)
+	#Range: 0 ~ 1000
+	finisherKillPoints = 150
+	#Points awarded for Firework kill (Kill mob on the airborne with EXPLOSION Damage)
+	#Range: 0 ~ 1000
+	fireworkPoints = 400
+	#Points awarded for Arsenal kill (killing with multiple weapons)
+	#Range: 0 ~ 1000
+	arsenalPoints = 225
+
+["Style Data"]
+	#How long do point decrease? (Count as Milis, For Example: 1000Milis = 1s)
+	#
+	#Range: 0 ~ 100000
+	timeDecreasePoints = 50
+	#How many points decrease each Milis? (Count as Milis, For Ex: I set: 1000Milis Decrease 20 points)
+	#
+	#Range: 0 ~ 1000
+	pointsDecreaseEachMilis = 1
+	#Combo in time (Count as Milis, Ex: If you perform combo in 2.5s (default) you will get bonus points, after 2.5s bonus points + combos reset!)
+	#
+	#Range: 0 ~ 100000
+	comboInTime = 2500
+	#Bonus points in combo (Ex: In 2.5s (default) combo, you get bonus points each combo you do! (For EX: Combo x2 = +5 points bonuses); after 2s (default), bonus points reset to 5)
+	#
+	#Range: 0 ~ 100
+	bonusPointsInCombo = 5
+	#Maximum bonus points from combos (prevents infinite stacking).
+	#Range: 0 ~ 1000
+	maxBonusPointsInCombo = 40
+	#How long do combos reset (Count as Milis, For Ex: 3000Milis = 3s)
+	#
+	#Range: 0 ~ 100000
+	comboTimeReset = 2500
+
+["Decrease Points System"]
+	#Decay points lost per tick when rank is S or higher (Set 1 is disable this option)
+	#Range: 1 ~ 100
+	highRankDecayMultiplier = 2
+	#Base points lost when hit (default: 50)
+	#Range: 0 ~ 500
+	hit_taken_base_penalty = 50
+	#Additional points lost for each consecutive hit (default: 10)
+	#Range: 0 ~ 500
+	hit_taken_stack_penalty = 10
+	#Time window in ms to count consecutive hits (default 2000ms = 2s)
+	#Range: 100 ~ 10000
+	hit_taken_combo_time = 2000
+
+["Rank Points Threshold (Advanced Setting)"]
+
+	["Rank Points Threshold (Advanced Setting)".rank]
+
+		["Rank Points Threshold (Advanced Setting)".rank.threshold]
+			#Points required to reach rank C
+			#Range: > 0
+			c = 400
+			#Points required to reach rank B
+			#Range: > 0
+			b = 900
+			#Points required to reach rank A
+			#Range: > 0
+			a = 1400
+			#Points required to reach rank S
+			#Range: > 0
+			s = 2000
+			#Points required to reach rank SS
+			#Range: > 0
+			ss = 2700
+			#Points required to reach rank SSS
+			#Range: > 0
+			sss = 3500
+
+["Rank for Next Points (Advanced Setting)"]
+
+	["Rank for Next Points (Advanced Setting)".rank]
+
+		["Rank for Next Points (Advanced Setting)".rank.pointsnext]
+			#Points needed in rank C to reach B
+			#Range: > 0
+			c = 500
+			#Points needed in rank B to reach A
+			#Range: > 0
+			b = 500
+			#Points needed in rank A to reach S
+			#Range: > 0
+			a = 600
+			#Points needed in rank S to reach SS
+			#Range: > 0
+			s = 700
+			#Points needed in rank SS to reach SSS
+			#Range: > 0
+			ss = 800
+			#Extra points in SSS rank (cap)
+			#Range: > 0
+			sss = 1000
+
+[Other]
+	#Cooldown time in ms for projectile hit scoring per entity (Default: 1500ms)
+	#Range: 0 ~ 100000
+	projectileHitCooldown = 1500
+	#Cooldown (ms) before shield block can give points again. (Default: 1000ms
+	#Range: 0 ~ 60000
+	shieldBlockCooldown = 500
+	#Reset time for Arsenal weapon tracking (ms)
+	#Range: 1000 ~ 60000
+	arsenalResetTime = 6000
+

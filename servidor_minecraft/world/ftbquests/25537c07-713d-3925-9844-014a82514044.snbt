@@ -1,0 +1,17 @@
+{
+	version: 1
+	uuid: "25537c07713d39259844014a82514044"
+	name: "BlaseTK#25537c07"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	player_data: {
+		25537c07713d39259844014a82514044: {
+			pinned_quests: ["0000000000000001"]
+			can_edit: 1b
+		}
+	}
+}
